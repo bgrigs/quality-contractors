@@ -1,13 +1,27 @@
 body, h1 {
     margin: 0;
     padding: 0;
-    font-family: Verdana, sans-serif;
 }
 
 body {
-    font-size: 16px;
+    font-size: 18px;
     background-color: silver;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
 }
+
+h1, 
+h2,
+h3,
+.nav__link {
+    font-family: 'IBM Plex Serif', serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    color:  rgb(25, 41, 88);
+}
+
 
 .container {
     padding: 0 150px;
@@ -22,14 +36,14 @@ body {
 }
 
 .logo {
-    width: 200px;
+    width: 275px;
     padding: 40px;
 }
 
 .nav__link {
-    color: white;
+    color: #fff;
+    font-size: 20px;
     text-decoration: none;
-    text-transform: uppercase;
     margin-right: 20px;
     padding-bottom: 5px;
     border-bottom: 2px solid rgb(25, 41, 88);
@@ -37,14 +51,9 @@ body {
 }
 
 .nav__link:hover {
-    color: silver;
+    color: darkgray;
     border-bottom-color: gold;
 }
-
-h2 {
-    color:  rgb(25, 41, 88);
-}
-
 
 .hero {
     display: flex;
@@ -92,6 +101,7 @@ h2 {
 
 .testimonial__header {
     color: gold;
+    letter-spacing: 1px;
 }
 
 .testimonial__name {
@@ -105,15 +115,58 @@ h2 {
 }
 
 .services {
-    background-color: #111;
+    background-color: rgb(29, 29, 29);
     padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.services__wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .services__header {
     color: gold;
+    margin-bottom: 50px;
+}
+
+.service {
+    max-width: 225px;
+}
+
+.service__img {
+    width: 225px;
+    height: 150px;
+    cursor: pointer;
 }
 
 .service__header {
     color: #eee;
+    border-bottom: 2px solid gold;
+    display: inline-block;
     font-size: 18px;
+    margin: 20px 0;
+}
+
+.service__text {
+    color: #eee;
+    margin: 0;
+    font-size: 16px;
+}
+
+.service__btn {
+    cursor: pointer;
+    color: rgb(25, 41, 88);
+    font-size: 14px;
+    font-weight: 600;
+    margin: 20px 0;
+    padding: 5px 8px;
+    background-color: #fff;
+    border: 2px solid gray;
+}
+
+.service__btn:hover {
+    background-color: rgb(25, 41, 88);
+    color: gold;
 }
