@@ -1,0 +1,119 @@
+body, h1 {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    background-color: silver;
+}
+
+.container {
+    padding: 0 150px;
+}
+
+.header {
+    background-color: rgb(25, 41, 88);
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    padding: 40px;
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(25, 41, 88);
+    transition: all .5s;
+}
+
+.nav__link:hover {
+    color: silver;
+    border-bottom-color: gold;
+}
+
+h2 {
+    color:  rgb(25, 41, 88);
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.hero__text {
+    text-align: center;
+    height: 100%;
+}
+
+.hero__img {
+    max-width: 60%;
+}
+
+.about-testimonial {
+    background-color: #eee;
+    display: flex;
+}
+
+.about-us,
+.testimonial {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.about-us {
+    max-width: 60%;
+}
+
+.about-us__text {
+    padding-right: 40px;
+}
+
+.testimonial {
+    max-width: 40%;
+    display: block;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgb(25, 41, 88);
+    color: white;
+}
+
+.testimonial__header {
+    color: gold;
+}
+
+.testimonial__name {
+    text-align: right;
+    color: gold;
+}
+
+.testimonial__name:before, 
+.testimonial__name:after {
+    content:"-"
+}
+
+.services {
+    background-color: #111;
+    padding-top: 100px;
+}
+
+.services__header {
+    color: gold;
+}
+
+.service__header {
+    color: #eee;
+    font-size: 18px;
+}
